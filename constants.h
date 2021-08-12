@@ -5,7 +5,7 @@
 
 namespace gsl  //Game School Lib
 {
-    const std::string ProjectFolderName{"../GSOpenGL2020/"};
+    const std::string ProjectFolderName{"../VSIM_Project_ChrisRH/"};
     const std::string AssetFilePath{ProjectFolderName + "Assets/"};
     const std::string ShaderFilePath{ProjectFolderName + "Shaders/"};
 
