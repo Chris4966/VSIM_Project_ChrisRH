@@ -43,6 +43,8 @@ void RollingBall::move(float dt)
 
             gsl::vec3 n = gsl::vec3::cross(t.V2.mXYZ - t.V1.mXYZ, t.V3.mXYZ - t.V1.mXYZ);
             n.normalize();
+
+            //a = [x * y, y^2 -1. z * y] * g
             mAcceleration = gsl::vec3{n.x * n.y, (n.y * n.y) -1, n.z * n.y} * gsl::GRAVITY;
             mAcceleration.normalize();
 
